@@ -1,5 +1,5 @@
 // snackbar button action types
-const ACTION_TYPE = {
+export const ACTION_TYPE = {
   TEXT: 'TEXT',
   CLOSE: 'CLOSE',
   NONE: 'NONE',
@@ -48,7 +48,7 @@ const Snackbar = { current: null };
  * Hides the snackbar
  * @return {void}
  */
-function hide() {
+export function hide() {
   if (Snackbar.current) {
     Snackbar.current.style.opacity = 0;
   }
@@ -366,4 +366,4 @@ function show(customOptions) {
   postStyleAdjust(options);
 }
 
-export { show, hide, ACTION_TYPE };
+export default show;

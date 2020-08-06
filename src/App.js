@@ -1,5 +1,5 @@
 import React from 'react'; // eslint-disable-line import/no-extraneous-dependencies
-import { show, ACTION_TYPE } from './snackbar'; // eslint-disable-line
+import show, { ACTION_TYPE } from './snackbar'; // eslint-disable-line
 import './snackbar.css'; // eslint-disable-line
 
 function App() {
